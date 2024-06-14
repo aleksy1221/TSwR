@@ -15,4 +15,3 @@ class ADRController(Controller):
             u.append(controller.calculate_control([x[i], x[i+2]], q_d[i], q_d_dot[i], q_d_ddot[i]))
         u = np.array(u)[:, np.newaxis]
         return u
-
